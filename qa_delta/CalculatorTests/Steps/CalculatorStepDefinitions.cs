@@ -48,9 +48,9 @@ namespace CalculatorTests.Steps
         }
 
         [When(@"I calculate delta from (.*),(.*),(.*) as coefficients of the quadratic equation")]
-        public void WhenICalculateDeltaFromAsCoefficientsOfTheQuadraticEquation(double a, double b, double c)
+        public void WhenICalculateDeltaFromAsCoefficientsOfTheQuadraticEquation(double x, double y, double z)
         {
-            _delta = calculator.Delta(a, b, c);
+            _delta = calculator.Delta(x, y, z);
         }
 
         [Then(@"the equation has (.*) real number solutions")]
